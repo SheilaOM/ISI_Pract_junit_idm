@@ -23,4 +23,6 @@ Paso1. Primero hemos identificado cuales son los métodos de la clase, siendo es
 		   NoSuchElementException - Si la cola está vacía.
    E peek()  --> Devuelve el elemento de la cabeza (sin eliminarlo), devolviendo null si la cola está vacía.
 
-Paso2. Realizamos la tabla de caracterizaciones.
+Paso2. Realizamos la tabla de caracterizaciones
+Paso3. Diseño de particiones para cada característica.
+
