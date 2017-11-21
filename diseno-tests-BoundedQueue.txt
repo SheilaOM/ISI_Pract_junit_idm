@@ -1,0 +1,25 @@
+TRABAJO REALIZADO CONJUNTAMENTE POR SEILA OLIVA MUÑOZ Y SERGIO MARTINEZ AGÜERO.
+
+Paso1. Primero hemos identificado cuales son los métodos de la clase, siendo estos add, offer, remove, poll, element, peek.
+
+   boolean add(E e) --> Intenta añadir el elemento (e de clase E) a la cola.
+			Devolviendo true si lo consigue y false si no es así.
+			Excepción:
+      IllegalStateException - Si el elemento no puede ser añadido debido a las restricciones de capacidad
+			ClassCastException - Si la clase del elemento no le deja ser añadido a la cola.
+			NullPointerException - Si el elemento es null y la cola no permite añadir nulls.
+			IllegalArgumentException - Si alguna propiedad del elemento no le deja ser añadido a la cola.
+   boolean offer(E e) --> Intenta añadir el elemento (e de clase E) a la cola si le dejan las restricciones de capacidad, en cuyo caso eleva una excepción.
+			  Devolviendo true si el elemento ha podido ser añadido a la lista.
+			  ClassCastException - Si la clase del elemento no le deja ser añadido a la cola.
+			  NullPointerException - Si el elemento es null y la cola no permite añadir nulls.
+			  IllegalArgumentException - Si alguna propiedad del elemento no le deja ser añadido a la cola.
+   E remove()  --> Elimina el elemento de la cabeza de la cola devolviendo el elemento de la cabeza
+		   Excepción:
+		   NoSuchElementException - Si la cola está vacía.
+   E poll()  --> Elimina el elemento de la cabeza de la cola devolviendo el elemento de la cabeza. Devuelve null si la cola está vacía.
+   E element()  --> Devuelve el elemento de la cabeza (sin eliminarlo).
+		   Excepción:
+		   NoSuchElementException - Si la cola está vacía.
+   E peek()  --> Devuelve el elemento de la cabeza (sin eliminarlo), devolviendo null si la cola está vacía.
+
