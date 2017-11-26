@@ -14,23 +14,36 @@ public class BoundedQueueTest {
 	   queuePrueba.enQueue ("dog");
 	}
 	
-	@Test public void testenQueue_BaseCase()
+	@Test public void testenQueue_C1()
 	{
 		BoundedQueue queuePrueba = new BoundedQueue(2);
 		queuePrueba.enQueue ("cat");
 	}
 
 	@Test(expected=IllegalStateException.class)
-	public void testenQueue_C1()
+	public void testenQueue_C2()
 	{
 		queuePrueba.enQueue ("cat");
 	}
 	
 	@Test(expected=NullPointerException.class)
-	public void testenQueue_C2()
+	public void testenQueue_C3()
 	{
 		BoundedQueue queuePrueba = new BoundedQueue(2);
 		queuePrueba.enQueue (null);
 	}
+	
+	@Test public void testdeQueue_C4()
+	{
+		queuePrueba.deQueue ();
+	}
+	
+	@Test(expected=IllegalStateException.class)
+	public void testenQueue_C5()
+	{
+		BoundedQueue queuePrueba = new BoundedQueue(2);
+		queuePrueba.deQueue ();
+	}
 
 }
+
