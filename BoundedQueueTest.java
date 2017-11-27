@@ -1,8 +1,5 @@
-package ISITest;
-
 import static org.junit.Assert.*;
 import org.junit.*;
-import java.util.*;
 
 public class BoundedQueueTest {
 
@@ -44,6 +41,31 @@ public class BoundedQueueTest {
 		BoundedQueue queuePrueba = new BoundedQueue(2);
 		queuePrueba.deQueue ();
 	}
-
+	
+	@Test()
+	public void testIsEmpty_BaseCase()
+	{
+		BoundedQueue queuePrueba = new BoundedQueue(2);
+		assertTrue (queuePrueba.isEmpty());
+	}
+	
+	@Test()
+	public void testIsEmpty_C6()
+	{
+		assertFalse (queuePrueba.isEmpty());
+	}
+	
+	@Test()
+	public void testIsFull_BaseCase()
+	{
+		assertTrue (queuePrueba.isFull());
+	}
+	
+	@Test()
+	public void testIsFull_C7()
+	{
+		BoundedQueue queuePrueba = new BoundedQueue(2);
+		assertFalse (queuePrueba.isFull());
+	}
 }
 
